@@ -1,48 +1,64 @@
 /* css for mike's photo site */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-    padding: 0;
-    margin: 1rem 4rem 1rem 4rem;
     background-color: #17141d;
     color: white;
     font-family: serif, sans-serif, monospace;
 }
-/* adding animated cards */
-#header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    margin: 2px 0 2px 2px;
-    align-items: center;
-}
-.container {
+
+.header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-}
-#name {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
 }
-#logo1 {
-    border-radius: 100px;
-    margin: 2em;
-}
+
+#logo1,
 #logo2 {
-    border: 1px solid #000;
-    border-radius: 20px;
-    float: right;
-    margin: 2em;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 15px;
 }
+
+hr { 
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.link {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    height: 50px;
+    margin: 10px;
+}
+
+.link :hover {
+  opacity: .75;
+}
+
+
 /* adding animated cards */
 .card-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 3rem;
     overflow-x: scroll;
 }
@@ -77,10 +93,9 @@ body {
     font-style: italic;
     font-weight: 600;
     font-size: 1.3em;
-    /*color: #ffec94;*/
-    /*color: #9Bd1fa;*/
     color: #b0e57c;
 }
+
 #form {
     display: flex;
     flex-direction: column;
@@ -115,33 +130,23 @@ body {
 }
 #email {
     max-width: 275px;
-    height: 20px;
+    height: 30px;
     width: 100%;
     padding: 2px;
+    border-radius: 4px;
 }
-.container2 {
-    display: flex;
-    flex-direction: row;
-    height: 3em;
-    justify-content: space-around;
-    align-items: center;
-}
+
 a {
     color: white;
 }
-.link {
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 0 .5em .5em .5em;
-    height: 50px;
-    text-align: center;
-}
+
 #pricing {
-    margin: 30px 30px 30px 30px;
-    width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 20px;
 }
 .section1 {
     height: 200px;
@@ -155,7 +160,7 @@ a {
     border-radius: 5px;
     color: black;
     padding: 15px 0;
-    width: 100%
+    width: 100%;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -182,8 +187,15 @@ footer {
 }
 
 
-@media (max-width: 600px) {
-    p {
-        font-size: 10px;
+@media (max-width: 1370px) {
+    .name {
+      font-size: 2rem;
+      color: red;
+    }
+    #logo2 {
+      display: none;
+    }
+    .container {
+      justify-content: center;
     }
 }
