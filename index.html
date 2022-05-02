@@ -12,32 +12,39 @@
     <link rel= "stylesheet" href="style.css">
 </head>
 <body>
-    <div class= "container"> <!-- flex item 1 -->
-    <header>
-        <img id= "logo1" src= "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/278840582_10166230381070258_1456467653839878917_n.jpg?stp=c0.23.206.206a_dst-jpg_p206x206&_nc_cat=107&ccb=1-5&_nc_sid=da31f3&_nc_ohc=2hMknKZx7PMAX9-A3Fu&tn=1jRKssI8d_oM4Zzx&_nc_ht=scontent-lga3-1.xx&oh=00_AT8M1gBJKmrnfY3iKVvzdgz8kEwS7gQypGAW2t5qSK-Jew&oe=62746EA9" alt= "photo of Maria, the photographer" width= "150px" height= "150px">
-    </header>
-    <header id="name">  <!-- flex item 2 -->
-        <h1 class= "name" id= "name">Maria Paul Photography</h1>
+    <div class= "container">
+      <div class="header">
+      <div class="header-logo1">
+        
+        <img id= "logo1" src= "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/278840582_10166230381070258_1456467653839878917_n.jpg?stp=c0.23.206.206a_dst-jpg_p206x206&_nc_cat=107&ccb=1-5&_nc_sid=da31f3&_nc_ohc=2hMknKZx7PMAX9-A3Fu&tn=1jRKssI8d_oM4Zzx&_nc_ht=scontent-lga3-1.xx&oh=00_AT8M1gBJKmrnfY3iKVvzdgz8kEwS7gQypGAW2t5qSK-Jew&oe=62746EA9" alt= "photo of Maria, the photographer">
+        </div>
+        
+       <div>
+         <h1 class= "name" id= "name">Maria Paul Photography</h1>
         <blockquote id= "quote">"The world is but a canvas to our imagination" - Henry David Thoreau</blockquote>
-        </header>  
-    <header id= "logo-photo2"> <!-- flex item3 -->
-        <img id= "logo2" src= "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt= "photo of an old fashioned camera on table" height= "150px">
-    </header>
+       </div>
+       </div>
+       <div>
+         <img id= "logo2" src= "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt= "photo of an old fashioned camera on table" height= "150px" width= "200">
     </div>
+    
+    </div> <!-- end of header container -->
+    
     <hr><hr>
-    <center><h2><script src="app.js"></script></h2></center>  
+    
     <form id= "form" action="mailto:Mpaul55@hotmail.com" method= "post">
     <input name= "email" id= "email" type= "email" placeholder="Enter your email address" required>
     <input id= "submit" type= "submit" value= "To Learn More" class= "btn">
     </form>
 
     <div class= "container2">
-        <article><h2>Photo Galleries</h2></article>
-        <article class= "link"><a href= "#gallery1" style= "text-decoration: none"><h2>Gallery 1</h2></a></article>
-        <article class= "link"><a href= "#gallery2" style= "text-decoration: none"><h2>Gallery 2</h2></a></article>
-        <article class= "link"><a href= "#gallery3" style= "text-decoration: none"><h2>Gallery 3</h2></a></article>
-        <article class= "link"><a href= "#pricing" style= "text-decoration: none"><h2>Pricing</h2></a></article>
-    </div>
+      <article><h2>Photo Galleries</h2></article>
+      <article class= "link"><a href= "#gallery1" style= "text-decoration: none"><h2>Gallery 1</h2></a></article>
+      <article class= "link"><a href= "#gallery2" style= "text-decoration: none"><h2>Gallery 2</h2></a></article>
+      <article class= "link"><a href= "#gallery3" style= "text-decoration: none"><h2>Gallery 3</h2></a></article>
+      <article class= "link"><a href= "#pricing" style= "text-decoration: none"><h2>Pricing</h2></a></article>
+      </div>
+      
     <!-- first 5 photos -->
     <h3>Gallery 1</h3>
     <hr>
@@ -171,8 +178,8 @@
             </header>
         </article>
     </section>
-        <h2>Pricing</h2>
-    <div id= "pricing">
+    <center><h2>Pricing</h2></center>
+    <div id= "pricing"><br>
         <section1 class= "section1">
             <div class= "level">Small Photo</div>
             <h2>Options from $16</h2>
@@ -202,11 +209,9 @@
         </section3>
     </div>
         <center><a href= "#name"><h3>Back to top</h3></a></center><br><br><br>
-        <center><i class="fa-brands fa-facebook fa-2xl"></i><a href= "https://www.facebook.com/search/top/?q=maria%20paul" target- "_blank"><h2>Maria Paul</h2></a></center>
+        <center><i class="fa-brands fa-facebook fa-2xl"></i><a href= "https://www.facebook.com/search/top/?q=maria%20paul" target= "_blank"><h2>Maria Paul</h2></a></center>
         
   <footer>&copy; 2022 pennington programming | All Rights Reserved</footer>
-    
-
 
 
 </body>
