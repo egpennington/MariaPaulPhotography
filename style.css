@@ -11,7 +11,7 @@ body {
     font-family: serif, sans-serif, monospace;
 }
 
-.header {
+.container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,10 +23,10 @@ body {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: 15px;
 }
 
-hr { 
+hr {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -50,7 +50,7 @@ hr {
 }
 
 .link :hover {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 
@@ -147,6 +147,7 @@ a {
     justify-content: center;
     text-align: center;
     margin: 10px 20px;
+    margin-right: 40px;
 }
 .section1 {
     height: 200px;
