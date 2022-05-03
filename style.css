@@ -244,7 +244,7 @@ footer {
   }
 }
 
-/* mobile 500px */
+/* mobile 600px */
 @media (max-width: 600px) {
   .card-list {
     grid-template-columns: 100px 100px;
@@ -254,8 +254,8 @@ footer {
   }
 }
 
- /* small mobile 360px */
-@media (max-width: 400px) {
+ /* small mobile 420px */
+@media (max-width: 420px) {
   .card-list {
     grid-template-columns: 100px;
   }
